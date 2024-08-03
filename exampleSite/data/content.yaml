@@ -59,6 +59,21 @@ Experience:
           - Nisl tincidunt eget nullam non nisi est
         Badges: ['Python', 'MATLAB', 'Data Processing', 'Paradigm Design']
 
+Projects:
+  - Title: "My First Project"
+    Subtitle: Lorem ipsum odor amet, consectetuer adipiscing elit.
+    Date: 2024
+    Details:
+      - Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie penatibus
+        nam aliquam dapibus primis mi vitae eros. Taciti habitant luctus dui ad rhoncus nascetur
+        et consectetur molestie. Habitant sodales nostra lacinia class volutpat sit montes euismod.
+        Cras id sed a faucibus cursus nascetur dignissim enim.
+    Links:
+      - Title: "Available on Github"
+        Url: "https://github.com/foo/bar.git"
+        Icon: fab fa-github
+    Badges: ['Python', 'HTML', 'CSS']
+
 Education:
   - Course: BSc & MSc in Biomedical Engineering and Biophysics
     Place: University of Lisbon

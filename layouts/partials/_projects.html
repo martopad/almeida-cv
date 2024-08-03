@@ -1,0 +1,60 @@
+{{ if .Projects }}
+<div id="projects" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">{{ i18n "projects" }}</h2>
+    </div>
+    <div class="section__content">
+        <div class="projects">
+            {{ range .Projects }}
+            {{ if .Class }}
+            <div class="projects__item {{ .Class }}">
+            {{ else }}
+            <div class="projects__item">
+            {{ end }}
+                <div class="projects__title">
+		    <div class="projects__header">
+                        <h3 class="projects__title">
+			    {{ .Title | safeHTML}}
+			</h3>
+                        <h3 class="projects__date">{{ .Date | safeHTML }}</h3>
+		    </div>
+                    <div class="projects__details">
+			<div class="projects__subheader">
+                            <h4 class="projects__subtitle">
+			        {{ .Subtitle | safeHTML }}
+			    </h4>
+			</div>
+			<ul>
+                            {{ range .Details }}
+                            <li class="projects__bullet">{{ . | safeHTML }}</li>
+                            {{ end }}
+                            <div class="projects__links">
+                                <ul>
+                                    {{ range .Links }}
+                                    <h4 class="projects__links_title">
+				        <i class="{{ .Icon }}">
+					{{ .Title | safeHTML }}
+				        </i>
+		                    <a href="{{ .Url }}">
+				        <span>{{ .Url | safeHTML }}</span>
+				    </a>
+				    </h4>
+                                    {{ end }}
+                                </ul>
+                            </div>
+			</ul>
+                        <div class="experience__badges">
+                            <ul>
+                                {{ range .Badges }}
+                                <li class="experience__badge">{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
